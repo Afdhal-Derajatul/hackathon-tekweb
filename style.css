@@ -1,0 +1,35 @@
+/* ========================================================
+   WashFlow - Style CSS (Modul 3 & 4)
+   ======================================================== */
+
+/* Styling Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+/* Modul 3: Cetak Struk Khusus Media Print */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #thermal-receipt, #thermal-receipt * {
+    visibility: visible;
+  }
+  #thermal-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
