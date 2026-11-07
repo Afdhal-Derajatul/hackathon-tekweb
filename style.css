@@ -1,35 +1,16 @@
 /* ========================================================
-   WashFlow - Style CSS (Modul 3 & 4)
+   Modul 3: CSS Dasar (Styling sederhana)
    ======================================================== */
 
-/* Styling Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+body {
+  font-family: Arial, sans-serif;
 }
 
-/* Modul 3: Cetak Struk Khusus Media Print */
-@media print {
-  body * {
-    visibility: hidden;
-  }
-  #thermal-receipt, #thermal-receipt * {
-    visibility: visible;
-  }
-  #thermal-receipt {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    margin: 0;
-  }
-  .no-print {
-    display: none !important;
-  }
+table th, table td {
+  border: 1px solid #e2e8f0;
+}
+
+/* Efek saat baris tabel disorot mouse */
+table tbody tr:hover {
+  background-color: #f8fafc;
 }
